@@ -1,0 +1,18 @@
+The Stanford bunny meshed from a watertight surface:
+http://www.cs.ubc.ca/~batty/bunny_watertight.obj
+
+Used a remeshed surface (approx 3.5mm edge length) as the basis for
+polyhedral meshing. With a small prism layer just for fun.
+
+Cell count approx. 25k cells.
+
+For general testing.
+
+- wavefront obj format for the surface
+- proSTAR (STAR-CD) format
+- EnSight "C Binary" format
+- OpenFOAM format
+
+
+Note that the wavefront and proSTAR files are scaled in millimeters,
+whereas the EnSight and OpenFOAM are in meters.

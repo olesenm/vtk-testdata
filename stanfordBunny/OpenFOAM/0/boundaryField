@@ -1,0 +1,48 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  1.6.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    note        "general boundaryField definition";
+    object      boundaryField;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+// only define when not already defined:
+#inputMode  protect
+outletCondition
+{
+    type        inletOutlet;
+    inletValue  $internalField;
+    value       $internalField;
+}
+
+wallCondition
+{
+    type        zeroGradient;
+}
+
+noCondition
+{
+    type        zeroGradient;
+}
+#inputMode  merge
+
+
+// define boundaryField
+boundaryField
+{
+    outlet { $outletCondition; }
+    #includeIfPresent   "$FOAM_CASE/boundaryField"
+    #includeIfPresent   "$FOAM_CASE/boundaryField-$FOAM_CASENAME"
+    ".*" { $wallCondition; }
+}
+
+// ************************************************************************* //

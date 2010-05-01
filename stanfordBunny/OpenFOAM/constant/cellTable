@@ -1,0 +1,40 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  1.6.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       IOMap<dictionary>;
+    note        "persistent data for thirdParty mesh <-> OpenFOAM translation";
+    location    "constant";
+    object      cellTable;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+
+2
+(
+1 
+{
+    Label           Core_Mesh;
+    MaterialType    fluid;
+    MaterialId      1;
+    SpinId          1;
+    ColorIdx        10;
+}
+
+2 
+{
+    Label           Prism_Mesh;
+    MaterialType    fluid;
+    MaterialId      1;
+    SpinId          1;
+    ColorIdx        11;
+}
+
+)

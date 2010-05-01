@@ -1,0 +1,26 @@
+// summary of ensight parts
+
+ensightCells
+{
+    id              1;
+    name            "Core_Mesh";
+    offset          0;
+    size            19823;
+}
+
+ensightCells
+{
+    id              2;
+    name            "Prism_Mesh";
+    offset          0;
+    size            5913;
+}
+
+ensightFaces
+{
+    id              3;
+    name            "wall_1";
+    offset          155938;
+    size            5913;
+}
+

@@ -1,0 +1,17 @@
+FORMAT
+type:           ensight gold
+
+GEOMETRY
+model:          geometry
+
+VARIABLE
+
+TIME
+time set:        1
+number of steps: 2
+filename numbers:
+ 0            0           
+time values:
+ 0.00000e+00  0.00000e+00 
+
+# end

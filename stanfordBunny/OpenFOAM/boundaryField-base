@@ -1,0 +1,14 @@
+/* OpenFOAM: The Open Source CFD Toolbox in -*- C++ -*- */
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    note        "for direct inclusion in boundaryField";
+    object      boundaryField;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+inlet { $inletCondition; }
+
+// ************************************************************************* //
